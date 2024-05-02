@@ -6,16 +6,16 @@ Efetue o cálculo da área, elevando o valor de raio ao quadrado e multiplicando
 
 #include <stdio.h>
 
-#define PI 3.14159
+#define PI 3.14159 // Define uma constante PI para o programa com o valor de 3.14159
  
 int main() {
-    double raio, area;
+    double raio, area; // Cria as variáveis raio e area do tipo double
+     
+    scanf("%lf", &raio); // Lê o valor da variável raio
     
-    scanf("%lf", &raio);
+    area = PI * raio * raio; // Atribui o valor do produto de pi pelo raio ao quadrado, à variável area
     
-    area = PI * raio * raio;
-    
-    printf("A=%.4f\n", area);
+    printf("A=%.4f\n", area); // Mostra o valor da área
     
     return 0;
 }
