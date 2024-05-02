@@ -9,12 +9,12 @@ Imprima "X = ".
 int main() {
     int a, b, soma;
     
-    scanf("%d", &a);
-    scanf("%d", &b);
+    scanf("%d", &a); // Lê o valor da variável a
+    scanf("%d", &b); // Lê o valor da variável b
     
-    soma = a + b;
-    
-    printf("X = %d\n", soma);
+    soma = a + b; // Atribui o valor da soma de a com b, à variável soma
+     
+    printf("X = %d\n", soma); // Mostra o resultado da soma 
     
     return 0;
 }
