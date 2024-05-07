@@ -9,11 +9,11 @@ Assuma que cada nota pode ir de 0 até 10.0, sempre com uma casa decimal.
 int main() {
     double a, b, media;
     
-    scanf("%lf\n%lf", &a, &b);
+    scanf("%lf\n%lf", &a, &b); // Lê os valores das variáveis a e b
     
-    media = ((a * 3.5) + (b * 7.5)) / 11;
+    media = ((a * 3.5) + (b * 7.5)) / 11; // A vaariável média é a média ponderada entre a e b
     
-    printf("MEDIA = %.5f\n", media);
+    printf("MEDIA = %.5f\n", media); // Mostra a média
     
     return 0;
 }
