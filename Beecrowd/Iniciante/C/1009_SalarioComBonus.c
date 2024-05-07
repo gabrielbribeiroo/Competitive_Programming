@@ -9,15 +9,15 @@ Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, in
 #include <stdio.h>
  
 int main() {
-    char nome[100];
-    double salario_fixo, vendas, salario_final;
+    char nome[100]; // Declaração de um vetor do tipo caractere de tamanho 100 para receber o nome
+    double salario_fixo, vendas, salario_final; // Decalaração de variáveis salario_fixo, vendas e salario_final do tipo double
     
-    scanf("%s", &nome);
-    scanf("%lf\n%lf\n", &salario_fixo, &vendas);
+    scanf("%s", &nome); // Lê a string nome
+    scanf("%lf\n%lf\n", &salario_fixo, &vendas); // Lê o salário fixo e o total de vendas
     
-    salario_final = salario_fixo + (vendas * 0.15);
+    salario_final = salario_fixo + (vendas * 0.15); // Cálculo do salário final
     
-    printf("TOTAL = R$ %.2lf\n", salario_final);
+    printf("TOTAL = R$ %.2lf\n", salario_final); // Mostra o salário final
     
     return 0;
 }
