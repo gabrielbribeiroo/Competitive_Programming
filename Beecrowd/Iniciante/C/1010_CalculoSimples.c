@@ -8,14 +8,18 @@ Após isso, calcule e mostre o valor a ser pago.
 #include <stdio.h>
  
 int main() {
-    int cod_1, qnt_1, cod_2, qnt_2;
-    float val_1, val_2, tot;
+    // Declaração das variáveis
+    int cod_1, qnt_1, cod_2, qnt_2; 
+    float val_1, val_2, tot; 
     
-    scanf("%d %d %f", &cod_1, &qnt_1, &val_1);
+    // Leitura dos códigos dos produto 1 e 2, seus números de peças e valores unitários 
+    scanf("%d %d %f", &cod_1, &qnt_1, &val_1); 
     scanf("%d %d %f", &cod_2, &qnt_2, &val_2);
     
+    // Cálculo do valor a ser pago
     tot = ((qnt_1 * val_1) + (qnt_2 * val_2));
     
+    // Mostra valor total
     printf("VALOR A PAGAR: R$ %.2f\n", tot);
     
     return 0;
