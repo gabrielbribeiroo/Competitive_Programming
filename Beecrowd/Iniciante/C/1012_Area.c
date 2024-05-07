@@ -10,19 +10,24 @@ Em seguida, calcule e mostre:
 
 #include <stdio.h>
 
+// Definição de uma constante pi no valor de 3.14159
 #define pi 3.14159
  
 int main() {
+    // Declaração de variáveis
     double a, b, c, triangulo, circulo, trapezio, quadrado, retangulo;
     
+    // Leitura das variáveis
     scanf("%lf %lf %lf\n", &a, &b, &c);
     
+    // Cálculo das áreas
     triangulo = (a * c) / 2;
     circulo = pi * c * c;
     trapezio = ((a + b) * c) / 2;
     quadrado = b * b;
     retangulo = a * b;
     
+    // Mostra o valor das áreas
     printf("TRIANGULO: %.3lf\n", triangulo);
     printf("CIRCULO: %.3lf\n", circulo);
     printf("TRAPEZIO: %.3lf\n", trapezio);
