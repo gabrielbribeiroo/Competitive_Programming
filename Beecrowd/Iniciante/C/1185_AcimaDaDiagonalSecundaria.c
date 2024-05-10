@@ -69,5 +69,5 @@ int main() {
     CalcularMedia(soma, &media);
     VerificarOperacao(op, soma, media);
     
-    return 0;
+    return 0;   
 }
