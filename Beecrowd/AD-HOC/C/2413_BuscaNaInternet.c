@@ -11,7 +11,7 @@ João está intrigado para saber quantas pessoas clicaram no primeiro link da bu
 #define FATOR 2 // Define uma constante multiplicativa de valor 2
 
 int main() {
-    int link1, link2, link3;
+    int link3;
     
     scanf("%d", &link3); // Lê a quantidade de pessoas que clicaram no terceiro link de busca
     
