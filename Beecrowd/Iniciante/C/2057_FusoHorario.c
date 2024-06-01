@@ -13,7 +13,6 @@ int main() {
     
     scanf("%d %d %d", &saida, &tempo, &fuso); // Leitura da hora da saída, do tempo de viagem e do fuso horário do destino com relação à origem
     
-    
     int chegada = (saida + tempo + fuso) % 24; // Calcula a hora de chegada
     
     if (chegada < 0) {
