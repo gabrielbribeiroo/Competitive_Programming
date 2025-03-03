@@ -25,3 +25,6 @@ This repository contains exercise codes for Competitive Programming in C, C++, a
   <img align = "top" alt = "gabrielbribeiroo_VSCode" height = "50" width = "50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
   <img align = "top" alt = "gabrielbribeiroo_PowerShell" height = "50" width = "50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powershell/powershell-original.svg" /> 
 </div>
+
+## License
+This project is licensed under the MIT License.
