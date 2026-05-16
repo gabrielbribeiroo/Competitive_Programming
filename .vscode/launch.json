@@ -8,10 +8,10 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Users/Dell/OneDrive/Documentos/Gabriel/UFPB/CompetitiveProgramming/Competitive_Programming/Studies/BIT",
+      "program": "c:/Users/Dell/OneDrive/Documentos/Gabriel/UFPB/CompetitiveProgramming/Competitive_Programming/Studies/BIT/build/Debug/outDebug",
       "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
+      "miDebuggerPath": "C:/mingw64/bin/gdb.exe",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
