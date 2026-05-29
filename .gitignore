@@ -1,0 +1,10 @@
+# Compiled Executables
+*.exe
+*.out
+*.o
+*.obj
+
+# Build Directories
+build/
+bin/
+obj/
