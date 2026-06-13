@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Dell/OneDrive/Documentos/Gabriel/UFPB/CompetitiveProgramming/Competitive_Programming/Studies/SparseTable",
-      "program": "c:/Users/Dell/OneDrive/Documentos/Gabriel/UFPB/CompetitiveProgramming/Competitive_Programming/Studies/SparseTable/build/Debug/outDebug",
+      "cwd": "c:/Users/Dell/OneDrive/Documentos/Gabriel/UFPB/CompetitiveProgramming/Competitive_Programming/Studies/BinaryExponentiation",
+      "program": "c:/Users/Dell/OneDrive/Documentos/Gabriel/UFPB/CompetitiveProgramming/Competitive_Programming/Studies/BinaryExponentiation/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "C:/mingw64/bin/gdb.exe",
       "setupCommands": [
