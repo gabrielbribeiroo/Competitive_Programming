@@ -31,12 +31,17 @@ void solve() {
 
   vector<vector<int>> dist(n, vector<int>(m, INF));
   dist[0][0] = 0;
+  vector<vector<bool>> vis(n, vector<bool>(m, false));
 
   deque<pair<int, int>> dq;
   dq.push_front({0, 0});
   while (!dq.empty()) {
-    auto [u, v] = dq.front();
+    auto curr = dq.front();
     dq.pop_front();
+    int u = curr.first;
+    int v = curr.second;
+    if (vis[u][v]) continue;
+    vis[u][v] = true;
     for (int i = 0; i < 4; i++) {
       int cx = u + dx[i];
       int cy = v + dy[i];
@@ -59,4 +64,13 @@ void solve() {
   cout << dist[n - 1][m - 1] << endl;
 }
 
-int main() { return 0; }
+int main() {
+  _
+  int t;
+  if (cin >> t) {
+    while (t--) {
+      solve();
+    }
+  }
+  return 0;
+}
