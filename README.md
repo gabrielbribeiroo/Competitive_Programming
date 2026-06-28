@@ -40,7 +40,9 @@ Competitive_Programming/
 │   └── 📁 Maratona02/        # Codes developed during the second Maratona edition
 └── 📁 Studies/               # Classic algorithms and data structures implemented for study
     ├── 📁 BIT/               # Binary Indexed Tree (Fenwick Tree)
+    ├── 📁 BinaryExponentiation/ # Binary Exponentiation algorithms
     ├── 📁 SegTree/           # Segment Tree (Range Queries)
+    ├── 📁 ShorthestPaths/    # Shortest path algorithms on graphs (Dijkstra, 0-1 BFS)
     └── 📁 SparseTable/       # Sparse Table for fast range queries (RMQ, Modulo, etc.)
 ```
 
@@ -52,8 +54,10 @@ Below are the implementations created for conceptual study and reuse in problem-
 
 | Topic / Structure | Description / Supported Operations | Related Files |
 | :--- | :--- | :--- |
+| **Binary Exponentiation** | Efficient calculation of $a^b \pmod m$ in $O(\log b)$ complexity. | 📄 [BinExp.cpp](Studies/BinaryExponentiation/BinExp.cpp) |
 | **BIT (Fenwick Tree)** | Range sum queries and point updates efficiently in $O(\log N)$. | 📄 [CuriousRobinHood.cpp](Studies/BIT/CuriousRobinHood.cpp) |
 | **Segment Tree (SegTree)** | Range queries and point/range updates efficiently in $O(\log N)$. | 📄 [DynamicRangeSumQueries.cpp](Studies/SegTree/DynamicRangeSumQueries.cpp)<br>📄 [RangeUpdateQueries.cpp](Studies/SegTree/RangeUpdateQueries.cpp) |
+| **Shortest Paths** | Pathfinding algorithms on graphs: Dijkstra's algorithm and 0-1 BFS using double-ended queues. | 📄 [Bfs01.cpp](Studies/ShorthestPaths/Bfs01.cpp)<br>📄 [Dijkstra.cpp](Studies/ShorthestPaths/Dijkstra.cpp)<br>📄 [ShortestRoutes.cpp](Studies/ShorthestPaths/ShortestRoutes.cpp) |
 | **Sparse Table** | Static structure for range queries (like RMQ) in $O(1)$ after $O(N \log N)$ preprocessing. | 📄 [MaximumModuloEquality.cpp](Studies/SparseTable/MaximumModuloEquality.cpp)<br>📄 [StaticRangeMinimumQueries.cpp](Studies/SparseTable/StaticRangeMinimumQueries.cpp) |
 
 ---
