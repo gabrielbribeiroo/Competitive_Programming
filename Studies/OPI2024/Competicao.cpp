@@ -73,7 +73,7 @@ int main() {
     vector<Competitor> non_dominated;
     ll max_r = 0;
     for (int i = (int)unique_comps.size() - 1; i >= 0; i--) {
-        if (unique_comps[i].r >= max_r) {
+        if (unique_comps[i].r > max_r) {
             non_dominated.pb(unique_comps[i]);
             max_r = unique_comps[i].r;
         }
