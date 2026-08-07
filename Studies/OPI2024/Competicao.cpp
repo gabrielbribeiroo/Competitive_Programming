@@ -25,18 +25,19 @@ struct Competitor {
 
 // Retorna true se P2 é redundante entre P1 e P3
 bool is_redundant(const Competitor &P1, const Competitor &P2, const Competitor &P3) {
-    // Vetores no plano (1/s, 1/r):
-    // P2 é redundante se estiver acima do segmento P1-P3 (produto cruzado > 0)
-    // lhs = (r1 - r2) * s1 * (s3 - s2)
-    // rhs = (r2 - r3) * r1 * (s2 - s1)
+    // P2 é redundante se o ponto de intersecção x23 >= x12
+    // x12 = (P2.s - P1.s) * P1.r * P2.r / ((P1.r - P2.r) * P1.s * P2.s)
+    // x23 = (P3.s - P2.s) * P2.r * P3.r / ((P2.r - P3.r) * P2.s * P3.s)
+    // x23 >= x12 <=> (P1.r - P2.r) * (P3.s - P2.s) * P1.s * P3.r >= (P2.r - P3.r) * (P2.s - P1.s) * P1.r * P3.s
+
 #ifdef __SIZEOF_INT128__
-    __int128 lhs = (__int128)(P1.r - P2.r) * P1.s * (P3.s - P2.s);
-    __int128 rhs = (__int128)(P2.r - P3.r) * P1.r * (P2.s - P1.s);
-    return lhs > rhs;
+    __int128 lhs = (__int128)(P1.r - P2.r) * (P3.s - P2.s) * P1.s * P3.r;
+    __int128 rhs = (__int128)(P2.r - P3.r) * (P2.s - P1.s) * P1.r * P3.s;
+    return lhs >= rhs;
 #else
-    long double lhs = (long double)(P1.r - P2.r) * P1.s * (P3.s - P2.s);
-    long double rhs = (long double)(P2.r - P3.r) * P1.r * (P2.s - P1.s);
-    return lhs > rhs + 1e-11;
+    long double lhs = (long double)(P1.r - P2.r) * (P3.s - P2.s) * P1.s * P3.r;
+    long double rhs = (long double)(P2.r - P3.r) * (P2.s - P1.s) * P1.r * P3.s;
+    return lhs >= rhs - 1e-11;
 #endif
 }
 
