@@ -34,36 +34,37 @@ int delta[4][4] = {
 };
 
 int main() {
-    _
-    int n, k;
-    if (!(cin >> n >> k)) return 0;
-
-    // Caso base i = 1
-    dp[1][1][0] = 1; // (W, W) -> 1 componente
-    dp[1][2][1] = 1; // (W, B) -> 2 componentes
-    dp[1][2][2] = 1; // (B, W) -> 2 componentes
-    dp[1][1][3] = 1; // (B, B) -> 1 componente
-
-    for (int i = 2; i <= n; i++) {
-        for (int j = 1; j <= 2 * n; j++) {
-            for (int prev = 0; prev < 4; prev++) {
-                if (dp[i - 1][j][prev] == 0) continue;
-                for (int cur = 0; cur < 4; cur++) {
-                    int nj = j + delta[prev][cur];
-                    if (nj <= 2 * n) {
-                        dp[i][nj][cur] = (dp[i][nj][cur] + dp[i - 1][j][prev]) % MOD;
-                    }
-                }
-            }
-        }
-    }
-
-    int ans = 0;
-    for (int mask = 0; mask < 4; mask++) {
-        ans = (ans + dp[n][k][mask]) % MOD;
-    }
-
-    cout << ans << endl;
-
+  _ int n, k;
+  if (!(cin >> n >> k))
     return 0;
+
+  // Caso base i = 1
+  dp[1][1][0] = 1; // (W, W) -> 1 componente
+  dp[1][2][1] = 1; // (W, B) -> 2 componentes
+  dp[1][2][2] = 1; // (B, W) -> 2 componentes
+  dp[1][1][3] = 1; // (B, B) -> 1 componente
+
+  for (int i = 2; i <= n; i++) {
+    for (int j = 1; j <= 2 * n; j++) {
+      for (int prev = 0; prev < 4; prev++) {
+        if (dp[i - 1][j][prev] == 0)
+          continue;
+        for (int cur = 0; cur < 4; cur++) {
+          int nj = j + delta[prev][cur];
+          if (nj <= 2 * n) {
+            dp[i][nj][cur] = (dp[i][nj][cur] + dp[i - 1][j][prev]) % MOD;
+          }
+        }
+      }
+    }
+  }
+
+  int ans = 0;
+  for (int mask = 0; mask < 4; mask++) {
+    ans = (ans + dp[n][k][mask]) % MOD;
+  }
+
+  cout << ans << endl;
+
+  return 0;
 }
