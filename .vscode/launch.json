@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Dell/OneDrive/Documentos/Gabriel/UFPB/CompetitiveProgramming/Competitive_Programming/Studies/DynamicProgramming",
-      "program": "c:/Users/Dell/OneDrive/Documentos/Gabriel/UFPB/CompetitiveProgramming/Competitive_Programming/Studies/DynamicProgramming/build/Debug/outDebug",
+      "cwd": "c:/Users/Dell/OneDrive/Documentos/Gabriel/UFPB/CompetitiveProgramming/Competitive_Programming/Studies/OPI2024",
+      "program": "c:/Users/Dell/OneDrive/Documentos/Gabriel/UFPB/CompetitiveProgramming/Competitive_Programming/Studies/OPI2024/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "C:/mingw64/bin/gdb.exe",
       "setupCommands": [
